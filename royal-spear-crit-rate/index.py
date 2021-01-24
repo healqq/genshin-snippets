@@ -2,7 +2,9 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 
+# number of hits to do
 EXPERIMENT_SIZE = 100000
+# for refinement 1
 WEAPON_STACK_VALUE = 0.08
 random.seed()
 def get_experiment_result_for_crit_value(current_crit):
