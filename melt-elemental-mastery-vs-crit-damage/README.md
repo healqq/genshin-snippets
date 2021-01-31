@@ -12,7 +12,7 @@ All calculations are done for **Cryo** -> **Fire** reaction, for Fire -> Cryo EM
 
 # TLDR
 For Fire:
-Crit Damage > Eelemental mastery with at least 20% Crit rate
+Crit Damage > Eelemental mastery with at least 60% Crit rate
 
 # Plots
 Base damage is 1000 
