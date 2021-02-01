@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # number of hits to do
 EXPERIMENT_SIZE = 100000
 # for refinement 1
-WEAPON_STACK_VALUE = 0.08
+WEAPON_STACK_VALUE = 0.16
 random.seed()
 def get_experiment_result_for_crit_value(current_crit):
   result = np.zeros(EXPERIMENT_SIZE)
@@ -23,14 +23,16 @@ def get_experiment_result_for_crit_value(current_crit):
     result[index] = int(current_result)
   return result
 
-
-def main():
-  crit_values = np.arange(0, 0.8, 0.05)
+def get_effective_crit_value(crit_values):
   results = np.zeros((np.shape(crit_values)[0], EXPERIMENT_SIZE))
   for index in range(crit_values.shape[0]):
     results[index] = get_experiment_result_for_crit_value(crit_values[index])
   
-  mean_results = np.mean(results, axis=1)
+  return np.mean(results, axis=1)
+
+def main():
+  crit_values = np.arange(0, 0.8, 0.05)
+  mean_results = get_effective_crit_value(crit_values)
   plt.plot(
     # added crit
     crit_values * 100, (mean_results - crit_values) * 100, 'r',
@@ -40,7 +42,7 @@ def main():
     crit_values * 100, crit_values * 100, 'b--'
   )
   
-  plt.title('crit rate with Royal Spear (refinement 1)')
+  plt.title('crit rate with Royal Spear (refinement 5)')
   plt.xlabel('base crit rate, %')
   plt.ylabel('effective crit rate, %')
   plt.legend(['added crit', 'effective crit', 'base crit'])
