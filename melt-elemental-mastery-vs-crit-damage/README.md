@@ -17,12 +17,12 @@ Crit Damage > Eelemental mastery with at least 60% Crit rate
 # Plots
 Base damage is 1000 
 ## 20% Crit rate
-![visualisation](plot_20%.png)
+![visualisation](plot_20%25.png)
 ## 40% Crit rate
-![visualisation](plot_40%.png)
+![visualisation](plot_40%25.png)
 ## 60% Crit rate
-![visualisation](plot_60%.png)
+![visualisation](plot_60%25.png)
 ## 80% Crit rate
-![visualisation](plot_80%.png)
+![visualisation](plot_80%25.png)
 ## 100% Crit rate
-![visualisation](plot_100%.png)
+![visualisation](plot_100%25.png)
