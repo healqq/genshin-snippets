@@ -1,4 +1,4 @@
-# Average added crit rate when using Royal Spear
+# Crit damage vs Elemental mastery graphs
 
 <details>
 <summary>
